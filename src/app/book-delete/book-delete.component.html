@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Delete book</h1>
+  <button mat-raised-button color="primary" routerLink="/">Book list</button>
+  <table class="table table-light table-striped table-bordered table-hover">
+    <tr>
+      <th scope="row">Title:</th>
+      <td>{{ book.title }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Author:</th>
+      <td>{{ book.author }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Description:</th>
+      <td>{{ book.description }}</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button mat-raised-button color="warn" (click)="delete()">
+          Delete book
+        </button>
+        <button (click)="discard()" mat-raised-button color="danger">
+          Discard
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>
