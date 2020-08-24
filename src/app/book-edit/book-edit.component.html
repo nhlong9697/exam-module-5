@@ -5,20 +5,6 @@
   <form [formGroup]="bookForm" (ngSubmit)="edit()">
     <table class="table table-light table-striped table-bordered table-hover">
       <tr>
-        <th scope="row" class="w-25">Id:</th>
-        <td class="form-group">
-          <label class="w-100">
-            <input
-              class="form-control"
-              type="text"
-              formControlName="id"
-              value="{{ book.id }}"
-              readonly
-            />
-          </label>
-        </td>
-      </tr>
-      <tr>
         <th scope="row" class="w-25">Title:</th>
         <td class="form-group">
           <label class="w-100">

@@ -31,6 +31,7 @@ export class BookAddComponent implements OnInit {
     this.bookService.addNewBook(book).subscribe((res) => {
       this.message = 'New book added';
     });
+    this.bookForm.reset();
   }
   discard() {
     this.router.navigateByUrl('/');
